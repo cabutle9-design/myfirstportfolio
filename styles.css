@@ -106,12 +106,18 @@ img {
   padding: 1rem;
   text-align: center;
 }
-.project-card img,
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
 .gallery-grid img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
 }
 .featured-work {
   text-align: center;
@@ -194,5 +200,10 @@ footer {
   }
   .gallery-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .gallery-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
