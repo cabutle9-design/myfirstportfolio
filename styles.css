@@ -137,6 +137,14 @@ img {
 .project-summaries li {
   margin-bottom: 1rem;
 }
+.skills ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 0.5rem 2rem;
+  padding: 0;
+}
 .button {
   display: inline-block;
   background-color: #1F2A44;
